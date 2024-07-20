@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم اللغات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تعلم اللغات</h1>
+        <div class="input-group">
+            <textarea id="germanText" placeholder="أدخل النص الألماني هنا"></textarea>
+            <select id="targetLanguage">
+                <option value="arabic">العربية</option>
+                <option value="turkish">التركية</option>
+                <option value="ukrainian">الأوكرانية</option>
+            </select>
+        </div>
+        <button id="startButton">البدء</button>
+        <div id="sentenceContainer">
+            <p id="currentSentence"></p>
+            <div id="translation"></div>
+        </div>
+        <audio id="audioPlayer"></audio>
+        <div class="controls">
+            <button id="playButton">تشغيل</button>
+            <button id="pauseButton">إيقاف</button>
+            <button id="backButton">السابق</button>
+            <button id="nextButton">التالي</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
